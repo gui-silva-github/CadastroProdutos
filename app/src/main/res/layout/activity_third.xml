@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/third">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nome"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preco"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/salvarAlteracoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:onClick="salvar"
+        android:textSize="20sp"
+        android:layout_marginBottom="70dp"
+        android:text="Salvar alterações" />
+
+    <Button
+        android:id="@+id/listagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:onClick="listagem"
+        android:textSize="20sp"
+        android:text="Cadastro de Produtos" />
+
+    <Button
+        android:id="@+id/cadastro"
+        android:onClick="cadastro"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Produtos"
+        />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main">
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nome do produto"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço do produto"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/preco"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/adicionar"
+        android:onClick="adicionar"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        />
+
+        <Button
+            android:layout_marginTop="70dp"
+            android:id="@+id/listagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:onClick="listagem"
+            android:text="Lista de Produtos" />
+
+    </LinearLayout>
+
